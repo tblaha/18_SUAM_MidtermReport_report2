@@ -251,18 +251,18 @@ Also; not shown here, the system area increases for a higher L/D. If pad infrast
 Even though counter-intuitive, the plots makes sense, taking into account the methods and calculations applied in the tool, which strengthens out faith in the tool.
 
 
-\begin{wrapfigure}[13]{r}{0.35\textwidth}
+
+
+\section{Impact of Tool Inaccuracies} \label{sec:errorSensitivity}
+
+%\section{Error Sensitivity for Analysing Assumptions} 
+\begin{wrapfigure}[16]{r}{0.35\textwidth}
     \centering
     \includegraphics[width=0.35\textwidth]{Figures/NoiseBEMT.PNG}
     \captionsetup{justification=centering}
     \caption{BEMT RPM error propagation onto Noise}
     \label{fig:BEMTerror}
 \end{wrapfigure}
-
-\section{Impact of Tool Inaccuracies} \label{sec:errorSensitivity}
-
-%\section{Error Sensitivity for Analysing Assumptions} 
-
 
 Using the same sensitivity plot framework (\autoref{sec:sensitivityplot}) as in the above section, an easy-to-implement approach to tracking errors due to simplified calculations was developed. The earliest affected intermediate tool output is multiplied by a factor close to one and the sensitivity of the output criteria plotted against that factor. The severity of having an inaccurate method for that particular aspect of the tool can be evaluated by combining the change in the output with knowledge of the weight given to it in the trade off.
 
