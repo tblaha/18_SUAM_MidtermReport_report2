@@ -251,7 +251,13 @@ Also; not shown here, the system area increases for a higher L/D. If pad infrast
 Even though counter-intuitive, the plots makes sense, taking into account the methods and calculations applied in the tool, which strengthens out faith in the tool.
 
 
-
+\begin{wrapfigure}[13]{r}{0.35\textwidth}
+    \centering
+    \includegraphics[width=0.35\textwidth]{Figures/NoiseBEMT.PNG}
+    \captionsetup{justification=centering}
+    \caption{BEMT RPM error propagation onto Noise}
+    \label{fig:BEMTerror}
+\end{wrapfigure}
 
 \section{Impact of Tool Inaccuracies} \label{sec:errorSensitivity}
 
@@ -262,13 +268,7 @@ Using the same sensitivity plot framework (\autoref{sec:sensitivityplot}) as in 
 
 As an example, the propagation of an error in the rotor RPM as computed from the BEMT and its effect on noise is analysed; see \autoref{fig:BEMTerror}.
 
-\begin{wrapfigure}[13]{r}{0.35\textwidth}
-    \centering
-    \includegraphics[width=0.35\textwidth]{Figures/NoiseBEMT.PNG}
-    \captionsetup{justification=centering}
-    \caption{BEMT RPM error propagation onto Noise}
-    \label{fig:BEMTerror}
-\end{wrapfigure}
+
 
 Now, of course the Noise increases with additional (artificial) RPM, but it is interesting to not that the sensitivities differ per concept. If the 4 pax concept is chosen, more attention needs to be paid at reducing the error in rpm, because the noise (which is an important criterion) would otherwise by over or underestimated, depending on the sign of the error.
 
