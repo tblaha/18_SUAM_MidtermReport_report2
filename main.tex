@@ -1,0 +1,170 @@
+% view this document with picture http://idsb2016.org/main.pdf 
+
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[oneside]{tudelft-report}
+\usepackage{natbib}
+\usepackage{changes}
+\usepackage{csquotes}
+\usepackage{wrapfig}
+\usepackage{booktabs}
+%\usepackage{svg}
+\usepackage[final]{pdfpages}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{enumitem} % changed 26-09-19, provides custom enumerate labels
+\usepackage{nomencl}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}} %David added
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{afterpage}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\usepackage{ltxtable, lscape}
+
+\renewcommand{\nomname}{\chaptitlefamily{Nomenclature}
+\addcontentsline{toc}{chapter}{Nomenclature}}
+
+\setlength{\nomitemsep}{0pt}
+
+\renewcommand\nomgroup[1]{%
+\item[\sffamily\Large\bfseries%
+	\ifstrequal{#1}{A}{Latin Symbols}{%
+	\ifstrequal{#1}{B}{Greek Symbols}{}}%
+]%
+\vspace{8pt}%
+}
+\setlength{\nomitemsep}{-0.7\parsep}
+
+\usepackage{imakeidx}
+\usepackage[acronym]{glossaries}
+\makenoidxglossaries
+
+\input{Chapters/Abbreviations.tex}
+
+
+\renewcommand{\chapterautorefname}{Chapter} %to make the chapter with a capital letter
+\renewcommand{\sectionautorefname}{Section} %to make the section with a capital letter
+
+
+% cram toc
+\usepackage{titlesec}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{1} % instead of 2
+\renewcommand{\cftbeforetoctitleskip}{-70mm}
+%\renewcommand\cftchapafterpnum{\vskip}
+%\renewcommand\cftsecafterpnum{\vskip}
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+
+%% Insert the TU Delft logo at the bottom of the page.
+
+%% Print the title in cyan.
+{\makeatletter
+\largetitlestyle\fontsize{64}{94}\selectfont \title \@ Sustainable Urban Air Mobility
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+%door
+
+\bigskip
+\bigskip
+
+%% Print the name of the author.
+{\makeatletter
+%\largetitlefont\Large\bfseries\@author
+\largetitlestyle\fontsize{26}{26}\selectfont \author \@ Group 18
+\makeatother}
+
+\bigskip
+\bigskip
+
+{\makeatletter
+%\largetitlefont\Large\bfseries\@author
+\largetitlestyle\fontsize{48}{48}\selectfont\title \@ Midterm Report Draft
+\makeatother}
+
+\vfill
+
+\begin{tabular}{llll} 
+
+    \textbf{\large Author:} \vspace{1mm}  &  \textbf{\large Student number:}  &  \textbf{\large E-mail:} \\
+    Anne Bart \textbf{Beijneveld} & 4390458 & annebartbeijneveld@gmail.com \\
+    Till M. \textbf{Blaha} & 4597176 & t.m.blaha@student.tudelft.nl \\
+    Peter A. \textbf{Bos} & 4438043 & peterattiliobos@gmail.com \\
+    Ward A. \textbf{Broeders} & 4454359 & wardbroeders@hotmail.com \\
+    Trevor A. \textbf{Gast} & 4532414 & t.a.gast@student.tudelft.nl \\
+    Birgitte L. \textbf{Hennink} & 4463064 & birgittehennink@gmail.com \\
+    David \textbf{Oort Alonso} & 4532163  & davidoort@hotmail.com \\
+    Timon L. \textbf{Rowntree} & 4544927 & timon@rowntree.nl \\
+    Sidharatha S. \textbf{Thakur} & 4541340 & s.s.thakur@student.tudelft.nl\\
+    Simone F. \textbf{Veldhuizen} & 4534441 & simoon$\_$veldhuis@yahoo.com \\
+
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{lll}
+    \textbf{\large Mentor:} & Roelof \textbf{Vos}, \ TU Delft \vspace{1mm} \\
+    \textbf{\large Coaches:} & Cong \textbf{Li}, \ TU Delft \\
+        & Dmitrii \textbf{Kliukin}, \ TU Delft \\
+        & Luciana \textbf{Monteiro}, \ Embraer \\
+    \textbf{Date:} & \today
+\end{tabular}
+
+\end{center}
+
+\end{titlepage}
+
+\frontmatter
+
+\tableofcontents
+
+\setcounter{page}{2}
+
+%\glsaddall
+%\printnoidxglossary[type=\acronymtype,  title=List of Abbreviations]
+%\printacronyms
+
+\mainmatter
+\input{Chapters/ExecutiveSummary.tex}
+
+\newpage
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+\renewcommand{\nompreamble}{\begin{multicols}{2}}
+\renewcommand{\nompostamble}{\end{multicols}}
+\input{Chapters/Nomenclature.tex}
+\printnomenclature
+
+\input{Chapters/Introduction.tex}
+\input{Chapters/MarketAnalysis.tex}
+\input{Chapters/SDS.tex}
+\input{Chapters/TradeOffMethod.tex}
+\input{Chapters/CriteriaTools.tex}
+\input{Chapters/DesignSpace.tex}
+\input{Chapters/TradeOff.tex}
+\input{Chapters/Sensitivity.tex}
+\input{Chapters/VandV.tex}
+\input{Chapters/ProjectLogic.tex}
+\input{Chapters/Conclusion.tex}
+
+\setlength{\bibsep}{0.5pt}
+\bibliographystyle{aiaa}
+\bibliography{Chapters/bib}
+
+\input{Chapters/AppendixA.tex}
+\input{Chapters/AppendixB.tex}
+
+\end{document}
+

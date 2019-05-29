@@ -1,0 +1,162 @@
+\newpage
+\chapter*{Executive Summary}
+\label{ch-ES}
+\addcontentsline{toc}{chapter}{Executive Summary}
+
+Due to the increasing urbanisation, the pressure on road transportation and public transportation networks will keep on growing in the coming years. To solve this problem and deal with the growing energy demands, an urban air mobility system for the year 2050 will be developed in this project. The system will be designed for transporting passengers and not cargo, as the team wants to solve congestion. Section I contains an extended market analysis that elaborates on the congestion and user needs in the city taken as a reference, Los Angeles. In Section II, the approach with respect to sustainability throughout the project is explained. Next, in Section III the method to trade-off the different concepts is discussed, which is followed by an overview of the criteria that will be used to score the concepts. Also, the weight factors of the criteria are given. This chapter is followed by Section IV in which it is explained which tools were used to evaluate the different concepts. Before the concepts were created, the design space was reduced by analysing which options were infeasible. How this was done, is explained in Section V. In Section VI the results of the two trade-offs that were performed to determine a winning concept are then discussed. Also a risk analysis of the winning concept was done. Hereafter, in Section VII a sensitivity study is executed to analyse the effect of changing the original weight factors that were determined. Finally, in Section VIII, an explanation of the verification and validation of the tools developed is given.
+
+%The first trade-off was performed to determine the most feasible option in three different classes of vehicle sizes, namely 1-2 pax, 4-6 pax and 20+ pax, the next to determine which of these three options is best. 
+
+%MENTION SOMEWHERE WHY WE HAVE CHOSEN NOT TO TRANSPORT CARGO (DOES NOT SOLVE CONGESTION) AND WHY WE HAVE SIZED THE CONCEPT FOR BATTERIES (MUCH EASIER THAN HYDROGEN, DATA AVIALABLE. COULD HAVE INCLUDED SUPERCAPACITOR CONCEPTS).
+
+\section*{I. \ Extended Market Analysis}
+\label{ES.MA}
+\addcontentsline{toc}{section}{I. \hspace{3.75mm} Extended Market Analysis}
+
+The goal of the extended market analysis is to further investigate how a UAM system can be best implemented in the case study for Los Angeles. Possible ways to decrease the congestion level have been studied in the past and amongst others include the implementation of additional taxes on driving and the improvement of the current public transport system. During the development of a UAM system, these studies and the effect of the system on the existing transport flows must be taken into account. The average user in LA needs a transport system that is most importantly time efficient, affordable and sustainable in the long run. 
+
+Data from the Census Transportation Planning Products (CTPP) was used to create a mapping of the traffic flows in LA at different times of the day. It includes amongst other things the trip time, trip distance and the density of people moving where. In the database which was used, LA is divided into Public Use Microdata Areas (PUMAs) and the transport by car between each respective PUMA is computed and plotted on a map. This data was used to identify the most interesting routes for a UAM system in LA. 
+
+Even when designing a UAM system that runs efficiently, it is interesting to look at the broader picture and keep in mind that other new forms of transport might be present in 2050. A brief discussion about a few possible options takes place, along with a first estimate of the energy used per passenger per kilometre for each of the modes of transport. The latter is included to get a first comparison between the UAM system and other forms of transport in terms of energy efficiency. 
+
+\section*{II. \ Sustainable Development Strategy}
+\label{ES.SDS}
+\addcontentsline{toc}{section}{II. \hspace{2.75mm} Sustainable Development Strategy}
+
+A sustainable development strategy is created in order to outline the approaches towards environmental, social and economic sustainability, and will be adhered throughout the design process. The environmental sustainability aspect evaluates the level of pollution, usage of scarce materials and energy during manufacturing and operation of the system. Social sustainability evaluates the level at which the system improves the overall quality of life of the community of users and surrounding non-users. Economic sustainability is achieved through a system which maintains a profitable strategy on the long term. 
+
+The main approach adapted for incorporating sustainability in the design is selecting particular criteria designated to sustainability for the trade-off of different UAM concepts. In order to account for environmental sustainability, the trade-off will include the measure of payload range energy efficiency (PREE). This allows for comparison between the total energy efficiency's of the systems. Social sustainability is evaluated by assessing the noise emissions and downwash produced by the vehicle. These criteria are considered to be driving measures for the level of disturbance in the system on the users and community. Economic sustainability is evaluated through the criteria of development, manufacturing and operation costs, and also includes the average ticket prices per trip.
+
+
+\section*{III. \ Trade-Off Method \& Criteria}
+\label{ES.TOmethodcriteria}
+\addcontentsline{toc}{section}{III. \hspace{1.75mm} Trade-Off Method \& Criteria}
+
+In the concept selection procedure, several trade-offs will be performed. The trade off method that was used was the Analytical Hierarchy Process (AHP).
+
+To determine the trade-off criteria the mission need statement of the project was re-evaluated. This led to the conclusion that the system should provide a (partial) solution to the congestion issue of 2050, while also being sustainable, socially accepted and profitable. These requirements were translated into criteria. Sustainability is checked by comparing the payload range energy efficiency (PREE) factor and the battery mass. Social acceptance was assessed by determining the downwash and noise of each concept. Furthermore, also safety and passenger experience were taken into account. The profitability of each concept was determined by finding the ticket price/pax/km. Also the development cost were taken into account, however, since no exact number could be put on this, it is treated a a qualitative criterion at this stage of the project. It is analysed by looking at the Technical Readiness Level (TRL) of the design as a whole. Finally, the technical risks of every concept were evaluated by determining the score of the following qualitative criteria: the ATM/UTM efforts needed, susceptibility to weather conditions and required modifications of current regulations. 
+
+By use of the AHP method, first the weight factors when only the quantitative criteria are taken in to account were determined. Here it was found that the most important factors were the PREE, the noise, the ticket price and the ATM/UTM efforts. A little less important were the battery mass and the downwash. After this, the weight factors when both the quantitative and qualitative criteria were looked at were determined. The aforementioned factors were still found to be the most important, but the qualitative criteria of safety also has a relatively high score.
+
+
+
+\section*{IV. \ Tools}
+\label{ES.Tools}
+\addcontentsline{toc}{section}{IV. \hspace{2.5mm} Tools}
+
+%In this section first the reasoning behind all the trade-off criteria is shortly discussed and their given weight factor is given. Thereafter it will be explained how the tool that was created was used to evaluate the different concepts. 
+
+In order to get a value for all the quantitative criteria, a set of subtools were created. All these tools were then integrated to form one big tool. The tool is integrated in such a way that any user could use it easily. In addition to this, a database was created by collecting data on existing urban electric and hybrid aircraft currently in development from various sources. This database was used to determine statistics that could be used to estimate the vehicle input parameters of the different concepts. The estimated vehicle parameters form the inputs of the tool. Furthermore, certain parameters were fixed a priori. A sensitivity analysis was performed on the effect of fixing these parameters. The tool asks for certain vehicle and operational parameters after which it provides a set of outputs for both vehicle and infrastructure related parameters. The tool provides a very practical and easy way of optimising the designed concepts. Also, it ensures that all the concepts are evaluated in a similar manner. Finally, the different designs were optimised by making use of the sensitivity plots. These plots showed what the optimal value was for certain parameters in case they were plotted against another. 
+
+
+
+\section*{V. \ Reducing the Design Space}
+\label{ES.RedDS}
+\addcontentsline{toc}{section}{V. \hspace{3.5mm} Reducing the Design Space}
+
+After evaluating the design options for the vehicle, it was decided that electric jet propulsion is the only viable option for mass expulsion. For rotary wing configurations, all rotors and fans are kept as viable design options. Furthermore, for rotor options only the coaxial configuration is kept. In terms of power source design options, only rechargeable batteries are feasible. A database was created with 26 existing batteries as per May 2019, giving the cell characteristics of each cell. This database is necessary to make an educated evaluation of what battery to choose for a specific vehicle concept.
+
+For the payload configuration, it was decided that the cabin shall be closed and that passengers shall be seated in a conventional way. Finally, for control options, options that are disregarded are rocket thrusters, due to lack of practicality. Other control options omitted are wing deformations due to lack of existing technology. Gimbal control options are also omitted as they are typically too large. 
+After analysing the different options for the system, it was found that only the port-to-port system will be considered. This system is more energy efficient and also results in lower ticket prices than all other type of systems. Furthermore, it is assumed that autonomous control is possible in 2050. Therefore, having piloted vehicles is omitted as design option as well.
+
+\section*{VI. \ Trade-Off}
+\label{ES.TO}
+\addcontentsline{toc}{section}{VI. \hspace{2mm} Trade-Off}
+
+It was decided that for the capacity ranges 1-2, 4-6 and 20+ passengers, three concepts would be designed. These concepts were optimised and evaluated by the created tool. As described in \autoref{ES.TOmethodcriteria} first an intermediate trade-off is performed for the quantitative criteria of each passenger capacity. Followed by these intermediate trade-offs, the final trade-off is performed, also including the qualitative criteria. The trade-off summary table is shown in \autoref{TO-summary}. From this table it is clear that the 4-6 passenger vehicle, more specific the four person tilt-wing design, is the overall winner.
+
+%Since these are qualitative criteria, each concept was scored by every team member to determine its average score.
+
+\begin{table}[h]
+\centering
+\captionsetup{justification=centering}
+\caption{Trade-off summary table}
+\label{TO-summary}
+\begin{tabular}{lcccc}
+\hline
+\multicolumn{1}{c}{\textbf{Criteria}} & \multicolumn{1}{l}{\textbf{Total Weights}} & \multicolumn{1}{r}{\textbf{2 pax}} & \multicolumn{1}{l}{\textbf{4-6 pax}} & \multicolumn{1}{l}{\textbf{20 pax}} \\ \hline
+Payload Range Energy Eff. & 0.278 & \cellcolor[HTML]{E6FFE5}5 & \cellcolor[HTML]{E6FFE5}5 & 3 \\
+Battery mass & 0.078 & 4 & \cellcolor[HTML]{E6FFE5}5 & 3 \\
+Safety & 0.185 & 2.9 & \cellcolor[HTML]{E6FFE5}3.3 & 2.5 \\
+Passenger experience & 0.056 & \cellcolor[HTML]{E6FFE5}4.1 & 3.7 & 2.7 \\
+Noise & 0.055 & \cellcolor[HTML]{E6FFE5}5 & \cellcolor[HTML]{E6FFE5}5 & 2 \\
+Downwash & 0.017 & \cellcolor[HTML]{E6FFE5}5 & \cellcolor[HTML]{E6FFE5}5 & 4 \\
+Development cost & 0.036 & \cellcolor[HTML]{E6FFE5}4 & 3 & 1.8 \\
+Ticket price & 0.153 & 2 & \cellcolor[HTML]{E6FFE5}5 & 2 \\
+ATM/UTM efforts & 0.081 & 1.4 & 2.7 & \cellcolor[HTML]{E6FFE5}2.9 \\
+Weather conditions & 0.043 & 2.1 & 2.7 & \cellcolor[HTML]{E6FFE5}3.7 \\
+Modification of regulations & 0.018 & \cellcolor[HTML]{E6FFE5}3.7 & 3 & 1.5 \\ \hline
+\multicolumn{2}{c}{\textbf{Sum of Weighted Scores}} & \cellcolor[HTML]{FFFC9E}\textbf{3.55} & \cellcolor[HTML]{67FD9A}\textbf{4.22} & \cellcolor[HTML]{FD6864}\textbf{2.65} \\ \hline
+\end{tabular}
+\end{table}
+
+
+% \begin{table}[H]
+% \centering
+% \captionsetup{justification=centering}
+% \caption{Inputs of winning vehicles}
+% \label{inputswinES}
+% \scalebox{0.80}{%
+% \begin{tabular}{llll}
+% \hline
+% \textbf{Parameter}                    & \textbf{1-2 pax}      & \textbf{4-6 pax} & \textbf{20+ pax}    \\ \hline
+% MTOW {[}kg{]}                         & 575                   &    971              & 7418                \\
+% OEW/MTOW        & 0.40                    &   0.35          & 0.45                  \\
+% \# Passengers {[}-{]}                 & 2                     &      4            & 20                  \\
+% Range {[}km{]}                        & 60                    &       60           & 60                  \\
+% Max Dimension {[}m{]}                 & 5                     &      10            & 18                  \\
+% %Battery Energy density {[}Wh/kg{]}    & 260                &      260            & 260               \\
+% %Battery Power density {[}W/kg{]}      & 2100               &          2100        & 2100              \\
+% L/D {[}-{]}                           & 12                    &       15           & 13                  \\
+% Radius of rotors (x number of rotors) & 0.85 (2x) \& 0.8 (2x) &    1 (x4); 1.5 (x1); 0.7 (x2)             & 2.5 (x4), 0.85 (x4) \\
+% Cruise Velocity {[}m/s{]}             & 32                    &        82          & 111.1               \\ \hline
+% \end{tabular}
+% }
+% \end{table}
+
+% \begin{table}[H]
+% \centering
+% \captionsetup{justification=centering}
+% \caption{Outputs of winning vehicles}
+% \label{outputswinES}
+% \scalebox{0.80}{%
+% \begin{tabular}{llll}
+% \hline
+% \textbf{Parameter}                          & \textbf{1-2 pax} & \textbf{4-6 pax} & \textbf{20+ pax} \\ \hline
+% \# Vehicles {[}-{]}                         & 12900             &     3350             & 1500             \\
+% \# Pads {[}-{]}                             & 1620             &        800          & 550              \\
+% \# Trips/day {[}-{]}                        & 308000           &       124000           & 26000            \\
+% \# PREE {[}Wh/(pax-km){]}                   & 790           &        670          & 1230           \\
+% \# Ticket price per kilometre {[}\$/km{]} & 2.34             &    3.85              & 7.84             \\
+% \# Ticket price per kilometre {[}\$/km - pad costs{]} & 0.62             &    0.42              & 0.59             \\
+% \# Passengers/day {[}-{]}                   & 32700           &     269000             & 259000           \\
+% Vertiport Area {[}m\textsuperscript{2}{]}   & 630            &     2870             & 5700             \\
+% Total System Area {[}km\textsuperscript{2}  & 1.01          &       1.55           & 3.12          \\
+% Total Board Time {[}s{]}                    & 210              &        300          & 1020             \\
+% Noise {[}dBA{]}                             & 71             &       74           & 89             \\ 
+% Downwash [m/s]                              & 51            &       33              &   48      \\ \hline
+% \end{tabular}
+% }
+% \end{table}
+
+\section*{VII. \ Sensitivity Analysis}
+\label{ES.SA}
+\addcontentsline{toc}{section}{VII.\hspace{1mm} Sensitivity Analysis}
+
+In such a multidimensional problem with complex dependencies, numerous assumptions are required to simplify the problem and develop useful tools. As such, a sensitivity analysis of the output of the tool was done to look for risk factors, and issues before making the final trade-off.
+
+All parameters of the tool were considered in the analysis, and compared to their effect on the outputs critical to trade-off. While many parameters showed little sensitivity, some showed important relations and limitations of the tool. The pad costs were found to heavily drive the ticket price, accounting for up to 80\% of the price. These costs may be overestimated or subsidised in other ways. In the tool, the pad costs were linked directly to vehicle size, although this may not be the case. Limiting the trip range to a minimum required distance improves the energy efficiency and reduces cost. Further cost reduction can be achieved if the market share is increased as well. The market share is powerful enough to override many other sensitivities on the final ticket price. Different cruise altitudes result in different concept winner between the 2 and 20 passenger vehicle, but not the 4 passenger vehicle. The cruise velocity also impacts ticket price and results in a different winner depending on market share. The 4 passenger concept generally performs better in this criteria. 
+
+Generally speaking, increases to MTOW increase the ticket price locally for each concept. A reduced L/D ratio in cruise also increases the ticket price. Since this is difficult to estimate, may have an important effect on the final trade-off. However, due to the relation between charge rate density and battery mass (and indirectly the energy density), the charging time may decrease as a battery increases in mass. While a heavier vehicle may increase costs, a faster charge time may reduce the final ticket price. This relation is further confounded by the non-linearity of the relation of MTOW to trip energy used. The sensitivity in this relation should be further evaluated in the design phase.
+
+A sensitivity analysis was also done the weights given to the various criteria. Two different methods were used. First, our panel of experts (tutor and coaches) were asked to fill in the AHP. They were also asked to give qualitative scores to our concepts. Their weights and scores were compiled; they also chose the Tilt Wing 4 (Bumblebee) as the winner from the concepts. Furthermore, 100,000 different weighing combinations were generated from a various probability distribution. The “Single Wing” concept only won the trade-off in about 7\% of the time. The “Tilt Wing 4” concept won in about 93\% of the time. The “Tilt Wing 20” concept never won the trade-off. This analysis helps motivate the decision to select the “Tilt Wing 4” concept (Bumblebee) as the winner of our trade-off. 
+
+%super short summary 
+
+\section*{VIII. \ Verification \& Validation }
+\label{ES.VandV}
+\addcontentsline{toc}{section}{VIII. \hspace{1mm} \ Verification \& Validation}
+
+Even at this early stage of the design phase, the team decided to classify the majority of trade-off criteria as quantitative criteria. This led to the development of quite an elaborate and intertwined tool. The fact that the trade-off outcome depends heavily on the numbers coming out of the tool, together with the fact that the tool is complex and prone to contain errors means that significant effort was put into verification and validation.
+
+The first step in the verification process was to perform unit tests of the modules in the tool. These unit tests were performed by either comparing the output of the tool to hand calculations or to literature results. The second step in the verification process was aimed at testing the integration of the individual modules in the tool by means of sensitivity analyses on the input parameters. The third step taken by the team was aimed at quantifying the future verification and validation resources that should be invested on each module, depending on how sensitive the output of the tool is to an error in the module. Finally, as validation 

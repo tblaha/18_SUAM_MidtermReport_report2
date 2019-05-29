@@ -1,0 +1,23 @@
+Footnote numbering starts from 1 on every single page
+
+General footnote 
+\footnote{\url{https://www.eolss.net/Sample-Chapters/C15/E1-28-02-01.pdf}[accessed 26.04.19]}
+
+
+
+Footnote in table
+-single 
+\footnotemark
+\footnotetext{}
+
+-multiple with the same footnote
+\footnotemark
+\footnotemark[\value{footnote}]
+\footnotetext[***footnote number***]{***text***}
+
+- Assigning footnote number
+\footnotemark[***value***]
+\footnotetext[***value***]{***text***}
+
+***Footnotetext should contain the url and any other text which should show up in the footnote
+***Make sure the order of footnotemark and footnotetext coincide
